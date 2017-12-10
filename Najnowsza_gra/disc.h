@@ -15,7 +15,9 @@ public:
 
 	void set_color(Color);
 	void set_position(Vector2f);
-
+	Color get_color();
+	Vector2f get_position();
+	float get_radius();
 
 	friend class drawing_engine;
 };

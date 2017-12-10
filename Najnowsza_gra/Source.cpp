@@ -2,7 +2,7 @@
 
 int main()
 {
-	game g(800,600);
+	game g(800,800);
 	g.loop();
 
 	return 0;

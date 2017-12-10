@@ -27,3 +27,15 @@ void disc::set_position(Vector2f _position)
 {
 	shape.setPosition(_position);
 }
+Color disc::get_color()
+{
+	return color;
+}
+Vector2f disc::get_position()
+{
+	return shape.getPosition();
+}
+float disc::get_radius()
+{
+	return shape.getRadius();
+}

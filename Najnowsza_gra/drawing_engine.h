@@ -13,7 +13,11 @@ public:
 
 	template<typename class_with_shape> void draw(class_with_shape cws)
 	{
-		window->draw(cws.shape);
+		for (class_with_shape::iterator start = cws.begin(); start != cws.end(); start++)
+		{
+			window->draw(start->shape);
+		}
+		
 	}
 
 	void display();
