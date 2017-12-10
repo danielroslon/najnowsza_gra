@@ -2,35 +2,38 @@
 
 
 
-game::game(): w(VideoMode(800,600,32), "Tutaj nie wiem co wpisac", Style::None)
-{
-}
-
+game::game(): window(VideoMode(800,600,32), "Gra", Style::None), d_engine(&window){}
+game::game(int x, int y) :window(VideoMode(x,y,32), "Gra", Style::None), d_engine(&window){}
 
 game::~game()
 {
 }
 
 
+
+
 void game::loop()
 {
-	while (w.isOpen())
+	disc_container.push_back(disc(Color::Red, Vector2f(200,200)));
+
+	while (window.isOpen())
 	{
-		w.clear(Color::Green);
+		window.clear(Color::White);
 
 		Event ev;
-		while (w.pollEvent(ev))
+		while (window.pollEvent(ev))
 		{
 			if (ev.type == ev.Closed)
 			{
-				w.close();
+				window.close();
 			}
 			if (ev.type == ev.KeyPressed && ev.key.code == Keyboard::Escape)
 			{
-				w.close();
+				window.close();
 			}
 		}
 
-		w.display();
+		d_engine.draw(disc_container[0]);
+		d_engine.display();
 	}
 }
