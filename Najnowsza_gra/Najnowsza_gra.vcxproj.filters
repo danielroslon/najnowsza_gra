@@ -18,42 +18,24 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="gra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="drawing_engine.cpp">
+    <ClCompile Include="rysownik.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="disc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="board.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="human_player.cpp">
+    <ClCompile Include="zdarzenia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game.h">
+    <ClInclude Include="gra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="drawing_engine.h">
+    <ClInclude Include="rysownik.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="disc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="board.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="human_player.h">
+    <ClInclude Include="zdarzenia.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

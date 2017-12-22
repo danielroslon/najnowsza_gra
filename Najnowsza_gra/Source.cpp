@@ -1,8 +1,11 @@
-#include "game.h"
+#include "gra.h"
+
+using namespace std;
 
 int main()
-{
-	game g(800,800);
+{		
+	gra g;
+
 	g.loop();
 
 	return 0;
